@@ -1,3 +1,23 @@
+<!--php
+include "start.php";
+
+
+if(isset($_POST['submit']))
+{
+
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $date = date('Y-m-d H:i:s');
+    $comment=$_POST['comment'];
+    
+     $sql="INSERT INTO people(name,email,date,comment) VALUES('$name','$email','$date','$comment')";
+     
+     $result=mysqli_query($db,$sql);
+     
+    
+}
+    
+?> -->
 <!DOCTYPE html>
 <html>
 
