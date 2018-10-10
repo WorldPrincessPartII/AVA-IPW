@@ -37,11 +37,40 @@ if(isset($_POST['submit']))
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
+
 	 <link rel="stylesheet" type="text/css" href="style1.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127163037-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-127163037-1');
+	</script>
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jayess.js"></script>
-<!-- 	<link rel="stylesheet" type="text/css" href="css/jqcloud.css">
-	<script type="text/javascript" src="js/jqcloud.js"></script> -->
+
+
+	<style type="text/css">
+
+	.features-section {
+		padding: 80px 0 0;
+	}
+	.features-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.features-list-item {
+		margin: 30px 0;
+	}
+
+</style>
+
 </head>
 
 
@@ -73,13 +102,13 @@ if(isset($_POST['submit']))
 					Anti-Violence App (AVA)
 				</h1>
 				<h2 class="subtitle">
-					Developed in partnership with Brisbane startup SkillzApps, AVA is a mobile app designed to assist survivors of domestic violence and stalking.
+					Developed in partnership with Brisbane startup SkillzApps, Black Panda 2.0 presents AVA - a mobile app designed to assist survivors of domestic violence and stalking.
 				</h2>
 
 				<a class="button is-link is-rounded" aria-haspopup="true" data-target="modal" id="download">Download</a>
 
 
-					<div class="modal" id="modal">
+				<div class="modal" id="modal">
 					<div class="modal-background"></div>
 					<div class="modal-card">
 						<header class="modal-card-head">
@@ -163,26 +192,20 @@ if(isset($_POST['submit']))
 					<nav class="level is-mobile">
 						<div class="level-item has-text-centered">
 							<div>
-								<p class="heading">Tweets</p>
-								<p class="title">3,456</p>
+								<p class="heading">Australian women over 18 <br>in affected by stalking</p>
+								<p class="title">1,613,400</p>
 							</div>
 						</div>
 						<div class="level-item has-text-centered">
 							<div>
-								<p class="heading">Following</p>
-								<p class="title">123</p>
+								<p class="heading">Australian men over 18 <br>in affected by stalking</p>
+								<p class="title">663,800</p>
 							</div>
 						</div>
 						<div class="level-item has-text-centered">
 							<div>
-								<p class="heading">Followers</p>
-								<p class="title">456K</p>
-							</div>
-						</div>
-						<div class="level-item has-text-centered">
-							<div>
-								<p class="heading">Likes</p>
-								<p class="title">789</p>
+								<p class="heading">Population affected by <br>stalking in the last 12 months</p>
+								<p class="title">~3%</p>
 							</div>
 						</div>
 					</nav>
@@ -197,16 +220,15 @@ if(isset($_POST['submit']))
 
 
 <!-- Mockup section -->
-<div id="product" class="section is-relative mockup-section">
+<!-- <div id="product" class="section is-relative mockup-section">
 	<div class="container">
 		<div class="columns has-text-centered">
 			<div class="column">
 				<img class="app-mockup" src="https://cssninja.io/themes/cssninja/assets/images/ui/ninja-landings.png" alt="">
-				<!--                         <img class="hr-bg" src="https://cssninja.io/themes/cssninja/assets/images/bg/abstraction.png" alt=""> -->
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- <img src="https://cssninja.io/themes/cssninja/assets/images/ui/header.png" style="margin-top: -1px;"> -->
 
@@ -292,7 +314,7 @@ if(isset($_POST['submit']))
 	<div class="container">
 		<div class="columns">
 			<div class="column">
-				<p class="title is-1 is-spaced has-text-centered" style="margin-top: 10px;">AVA Features</p>
+				<p class="title is-1 is-spaced has-text-centered" style="margin-top: 10px;">Primary Features</p>
 
 				<br><br>
 
@@ -328,7 +350,7 @@ if(isset($_POST['submit']))
 					<!-- Featured image -->
 					<div class="column is-4 is-offset-1">
 						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
+							<img class="main-image" src="img/generalinfo.png" alt="">
 						</div>
 					</div>
 					<!-- Content -->
@@ -365,7 +387,7 @@ if(isset($_POST['submit']))
 					<!-- Featured image -->
 					<div class="column is-4 is-offset-1">
 						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
+							<img class="main-image" src="img/ert.png" alt="">
 						</div>
 					</div>
 
@@ -380,7 +402,7 @@ if(isset($_POST['submit']))
 					<!-- Featured image -->
 					<div class="column is-4 is-offset-1">
 						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
+							<img class="main-image" src="img/support.png" alt="">
 						</div>
 					</div>
 					<!-- Content -->
@@ -417,7 +439,7 @@ if(isset($_POST['submit']))
 					<!-- Featured image -->
 					<div class="column is-4 is-offset-1">
 						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
+							<img class="main-image" src="img/diary.png" alt="">
 						</div>
 					</div>
 
@@ -426,66 +448,6 @@ if(isset($_POST['submit']))
 
 				<br><br>
 
-				<!-- Security Features --> 
-				<div class="columns is-vcentered mt-80">
-					<!-- Featured image -->
-					<div class="column is-4 is-offset-1">
-						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
-						</div>
-					</div>
-					<!-- Content -->
-					<div class="column is-6 is-offset-1">
-						<div class="minimal-feature">
-							<h2 class="title is-5 minimal-title">Security - Concealment Settings</h2>
-							<div class="feature-content has-text-justified">
-								Considering the sensitive nature of AVA, as well as the kind of content that is stored inside the app, security is important as it concerns data security and privacy. Should the data stored on AVA be compromised, the personal safety and wellbeing of the user could be affected.
-
-								<br><br>
-
-								Therefore, the feature for concealing the app has been included. With the aim of providing the highest possible security at a interaction level, the app offers 3 options for concealment:
-
-								<ul>
-									<li>Password</li>
-									<li>PIN</li>
-									<li>Fake Interface</li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- /Security Features -->
-
-				<br><br>
-
-				<!-- Footer Bar Features --> 
-				<div class="columns is-vcentered mt-80">
-					<!-- Featured image -->
-					<div class="column is-4 is-offset-1">
-						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
-						</div>
-					</div>
-					<!-- Content -->
-					<div class="column is-6 is-offset-1">
-						<div class="minimal-feature">
-							<h2 class="title is-5 minimal-title">Footer Bar</h2>
-							<div class="feature-content has-text-justified">
-								AVA will focus on helping the victims of domestic stalking, domestic violence, intimidation, as well as assist emergency services in responding to instances of violence as they occur. 
-
-								<br><br>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- /Footer Bar Features -->
-
-
-
 			</div>
 		</div>		
 	</div>
@@ -493,114 +455,122 @@ if(isset($_POST['submit']))
 
 <!--/App Itself --> 
 
-<!-- Features section -->
-<section class="section is-medium">
+
+
+<div class="is-divider" style="margin-left: 25%; margin-right: 25%;"></div>
+
+<!-- Added Features --> 
+<div id="ava" class="section" style="margin-top: 20px;">
 	<div class="container">
-		<!-- Feature -->
-		<div class="columns is-vcentered">
-			<!-- Content -->
-			<div class="column is-4 is-offset-1">
-				<div class="minimal-feature">
-					<h2 class="title is-5 minimal-title">Trending designs</h2>
-					<p class="feature-content">
-						We love design Big Time! Designing and developing websites is our job and we are passionate about it.  We explore trending design patterns for a constantly renewed user experience.
-					</p>
-				</div>
-			</div>
-			<!-- Featured image -->
-			<div class="column is-6 is-offset-1">
-				<div class="minimal-feature-image">
-					<img class="main-image" src="https://cssninja.io/themes/cssninja/assets/images/ui/post-cards.png" alt="">
-					<img class="image-bg is-hidden-mobile" src="https://cssninja.io/themes/cssninja/assets/images/bg/map.svg" alt="">
-				</div>
-			</div>
-		</div>
-		<!-- /Feature -->
+		<div class="columns">
+			<div class="column">
+				<p class="title is-1 is-spaced has-text-centered" style="margin-top: 10px;">Added Features</p>
 
-		<!-- Feature -->
-		<div class="columns is-vcentered mt-80">
-			<!-- Content -->
-			<div class="column is-4 is-offset-4 has-text-centered">
-				<div class="minimal-feature">
-					<h2 class="title is-5 minimal-title">Vast UI collections</h2>
-					<div class="feature-content">
-						Our themes are built with the same philosophy: Reusability. Our modular approach results in reusable UI component libraries, that you can easily extend to fit your specific needs.
+				<br><br>
+				<div class="columns">
+					<div class="column" style="margin-left: 10%; margin-right: 10%;">
+						<h2 class="title is-5 minimal-title">Security - Concealment Settings</h2>
+						<p class="content has-text-justified" ">Considering the sensitive nature of AVA, as well as the kind of content that is stored inside the app, security is important as it concerns data security and privacy. Should the data stored on AVA be compromised, the personal safety and wellbeing of the user could be affected. Therefore, the feature for concealing the app has been included.
+
+						<br><br>
+
+						</p>
+
+						<br>
+
+					</div>
+				</div>		
+
+				<div class="columns">
+					<div style="margin-left: 10%; margin-right: 10%;">
+					<div style="margin-top: 20px;">
+					<div class="container">
+						<div class="row">
+
+							<!-- left content --> 
+							<div class="col-md-4 col-sm-6">
+								<ul class="features-list features-list-left wow fadeInLeft" data-wow-duration="1s">
+									<li class="features-list-item">
+										<h5>Purpose</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+									</li>
+									<li class="features-list-item">
+										<h5>Available Concealment Methods</h5>
+										<ul>
+											<li>Password</li>
+											<li>PIN</li>
+											<li>Fake Interface</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+
+							<!-- phone image --> 
+							<div class="col-md-4 col-md-pull-4 text-center">
+								<img src="img/concealment.png" class="features-image wow fadeInUp" alt="" data-wow-duration="1s" />
+							</div>
+
+							<!-- right content --> 
+							<div class="col-md-4 col-md-push-4 col-sm-6">
+								<ul class="features-list features-list-right wow fadeInRight" data-wow-duration="1s">
+									<li class="features-list-item">
+										<h5>Fake Interface</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+
+									<li class="features-list-item">
+										<h5>PIN</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+									<li class="features-list-item">
+										<h5>Password</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<!-- Featured image -->
-		<div class="columns is-vcentered">
-			<div class="column is-8 is-offset-2 has-text-centered">
-				<div class="employees-centered">
-					<img src="https://cssninja.io/themes/cssninja/assets/images/ui/ui-elements.png" alt="">
 				</div>
-			</div>
-		</div>
-		<!-- /Feature -->
+				</div>
 
-		<!-- Feature -->
-		<div class="columns is-vcentered mt-80">
-			<!-- Content -->
-			<div class="column is-4 is-offset-1">
-				<div class="minimal-feature">
-					<h2 class="title is-5 minimal-title">Handcrafted elements</h2>
-					<div class="feature-content">
-						Details are important. They are the difference between an “ok looking” website and the one that will make you stand out of others. We handcraft UI elements at a high standard of quality.
-					</div>
-				</div>
-			</div>
-			<!-- Featured image -->
-			<div class="column is-6 is-offset-1">
-				<div class="minimal-feature-image">
-					<img class="main-image" src="https://cssninja.io/themes/cssninja/assets/images/ui/drop.png" alt="">
-				</div>
-			</div>
-		</div>
-		<!-- /Feature -->
 
-		<!-- Feature -->
-		<div class="columns is-vcentered mt-80">
-			<!-- Featured image -->
-			<div class="column is-6 is-offset-1">
-				<div class="minimal-feature-image">
-					<img class="main-image" src="https://cssninja.io/themes/cssninja/assets/images/ui/panel-comments.png" alt="">
-				</div>
-			</div>
-			<!-- Content -->
-			<div class="column is-4 is-offset-1">
-				<div class="minimal-feature">
-					<h2 class="title is-5 minimal-title">Storytelling</h2>
-					<div class="feature-content">
-						Nowadays, web users are more and more demanding. They actually decide to stay or to leave your website within a few seconds. Our designs simplify your storytelling and help you to develop a catchy website.
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /Feature -->
 
-		<!-- Feature -->
-		<div class="columns is-vcentered mt-80 pt-40">
-			<!-- Content -->
-			<div class="column is-4 is-offset-1">
-				<div class="minimal-feature">
-					<h2 class="title is-5 minimal-title">Quality driven</h2>
-					<div class="feature-content">
-						We stick to the best practices in terms of design and web development, using the best frameworks around. We provide structured files, code and standalone documentation for every product we sell.
-					</div>
-				</div>
-			</div>
-			<!-- Featured image -->
-			<div class="column is-6 is-offset-1">
-				<div class="minimal-feature-image">
-					<img class="main-image" src="https://cssninja.io/themes/cssninja/assets/images/ui/frameworks.png" alt="">
-				</div>
-			</div>
+<br><br>
+
+<!-- Footer Bar Features --> 
+<div class="columns is-vcentered mt-80">
+	<!-- Featured image -->
+	<div class="column is-4 is-offset-1">
+		<div class="minimal-feature-image">
+			<img class="main-image" src="img/FooterBar.png" alt="">
 		</div>
-		<!-- /Feature -->
 	</div>
-</section>
-<!-- /Features section -->
+	<!-- Content -->
+	<div class="column is-5 is-offset-1">
+		<div class="minimal-feature">
+			<h2 class="title is-5 minimal-title">Footer Bar</h2>
+			<div class="feature-content has-text-justified">
+				AVA will focus on helping the victims of domestic stalking, domestic violence, intimidation, as well as assist emergency services in responding to instances of violence as they occur. 
+
+				<br><br>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- /Footer Bar Features -->
+
+
+
+</div>
+</div>		
+</div>
+</div>
+<!--/Added Features --> 
 
 
 
@@ -650,52 +620,8 @@ if(isset($_POST['submit']))
 			</div>
 		</div>
 	</div>
-
-	<div class="intro column is-8 is-offset-2">
-		<h2 class="title">Perfect for developers or designers!</h2><br>
-		<p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a. Neque egestas congue quisque egestas diam in arcu cursus.</p>
-	</div>
 	
-	<div class="sandbox">
-		<div class="tile is-ancestor">
-			<div class="tile is-vertical is-8">
-				<div class="tile">
-			
-				</div>
-				<div class="tile is-parent is-shady">
-					<article class="tile is-child notification is-white">
-						<p class="title">Wide column</p>
-						<p class="subtitle">Aligned with the right column</p>
-						<div class="content">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</div>
-		<div class="tile is-ancestor">
-			<div class="tile is-parent is-shady">
-				<article class="tile is-child notification is-white">
-					<p class="title">Side column</p>
-					<p class="subtitle">With some content</p>
-					<div class="content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-					</div>
-				</article>
-			</div>
-			<div class="tile is-parent is-8 is-shady">
-				<article class="tile is-child notification is-white">
-					<p class="title">Main column</p>
-					<p class="subtitle">With some content</p>
-					<div class="content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-					</div>
-				</article>
-			</div>
-		</div>
-
-		</div>
-	</div>
+</div>
 </section>
 
 
@@ -742,20 +668,15 @@ if(isset($_POST['submit']))
 <footer class="footer">
 	<div class="container">
 		<div class="columns">
-			<div class="column is-4 is-offset-3">
+			<div class="column has-text-centered">
 				<h2><strong>Category</strong></h2>
 				<ul>
 					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
 					<li><a href="#">Vestibulum errato isse</a></li>
 					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
-				</ul>
-			</div>
-			<div class="column is-4">
-				<h2><strong>Category</strong></h2>
-				<ul>
-					<li><a href="#">Labore et dolore magna aliqua</a></li>
-					<li><a href="#">Kanban airis sum eschelor</a></li>
-					<li><a href="#">Modular modern free</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">Vestibulum errato isse</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
 				</ul>
 			</div>
 		</div>
