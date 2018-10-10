@@ -28,8 +28,27 @@ if(isset($_POST['submit']))
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jayess.js"></script>
+
+
+	<style type="text/css">
+
+	.features-section {
+		padding: 80px 0 0;
+	}
+	.features-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.features-list-item {
+		margin: 30px 0;
+	}
+
+</style>
+
 </head>
 
 
@@ -391,137 +410,109 @@ if(isset($_POST['submit']))
 
 				<br><br>
 				<div class="columns">
-					<div class="column">
+					<div class="column" style="margin-left: 10%; margin-right: 10%;">
+						<h2 class="title is-5 minimal-title">Security - Concealment Settings</h2>
+						<p class="content has-text-justified" ">Considering the sensitive nature of AVA, as well as the kind of content that is stored inside the app, security is important as it concerns data security and privacy. Should the data stored on AVA be compromised, the personal safety and wellbeing of the user could be affected. Therefore, the feature for concealing the app has been included.
 
-						<p class="content has-text-justified" style="margin-left: 10%; margin-right: 10%;">Stalking is criminal activity consisting of repeated and persistent attempts to impose unwanted communication and/or contact on another person, including the repeated following and harassing of another person. For example, sending flowers, writing love notes, and waiting for someone outside her place of work are actions that, on their own, are not criminal. When these actions are coupled with an intent to instill fear, to intimidate or cause injury, however, they may constitute a pattern of behaviour that is illegal. Stalking is also a behaviour associated with domestic violence, where one partner attempts to dominate and control the other.</p>
+						<br><br>
+
+						</p>
 
 						<br>
 
 					</div>
 				</div>		
 
-				<br><br>
+				<div class="columns">
+					<div style="margin-left: 10%; margin-right: 10%;">
+					<div style="margin-top: 20px;">
+					<div class="container">
+						<div class="row">
 
-				<!-- Security Features --> 
-				<div class="columns is-vcentered mt-80">
-					<!-- Featured image -->
-					<div class="column is-4 is-offset-1">
-						<div class="minimal-feature-image">
-							<img class="main-image" src="img/avatars.png" alt="">
-						</div>
-					</div>
-					<!-- Content -->
-					<div class="column is-5 is-offset-1">
-						<div class="minimal-feature">
-							<h2 class="title is-5 minimal-title">Security - Concealment Settings</h2>
-							<div class="feature-content has-text-justified">
-								Considering the sensitive nature of AVA, as well as the kind of content that is stored inside the app, security is important as it concerns data security and privacy. Should the data stored on AVA be compromised, the personal safety and wellbeing of the user could be affected.
+							<!-- left content --> 
+							<div class="col-md-4 col-sm-6">
+								<ul class="features-list features-list-left wow fadeInLeft" data-wow-duration="1s">
+									<li class="features-list-item">
+										<h5>Purpose</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-								<br><br>
-
-								Therefore, the feature for concealing the app has been included. With the aim of providing the highest possible security at a interaction level, the app offers 3 options for concealment:
-
-								<ul>
-									<li>Password</li>
-									<li>PIN</li>
-									<li>Fake Interface</li>
+									</li>
+									<li class="features-list-item">
+										<h5>Available Concealment Methods</h5>
+										<ul>
+											<li>Password</li>
+											<li>PIN</li>
+											<li>Fake Interface</li>
+										</ul>
+									</li>
 								</ul>
+							</div>
 
+
+							<!-- phone image --> 
+							<div class="col-md-4 col-md-pull-4 text-center">
+								<img src="img/concealment.png" class="features-image wow fadeInUp" alt="" data-wow-duration="1s" />
+							</div>
+
+							<!-- right content --> 
+							<div class="col-md-4 col-md-push-4 col-sm-6">
+								<ul class="features-list features-list-right wow fadeInRight" data-wow-duration="1s">
+									<li class="features-list-item">
+										<h5>Fake Interface</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+
+									<li class="features-list-item">
+										<h5>PIN</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+									<li class="features-list-item">
+										<h5>Password</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-
 				</div>
-				<!-- /Security Features -->
-
-
-				<!-- <section id="features" class="features-section section">
-				<div class="container">
-
-				
-					<h2 class="section-heading text-center wow fadeIn" data-wow-duration="1s">Close Up Features</h2>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p class="wow fadeIn" data-wow-duration="1s">It's literally impossible to browse through the Cutest Paw app and not have a smile on your face. Take a look.</p>
-						</div>
-					</div>
-
-					<div class="featuers-list-wrapper row">
-
-						
-						<div class="col-md-4 col-sm-6">
-							<ul class="features-list features-list-left wow fadeInLeft" data-wow-duration="1s">
-								<li class="features-list-item">
-									<h5>Easy Browsing</h5>
-									<p>Cutest Paw operates smoothly and efficiently. Scrolling through all of the different photos of animals is quick and easy.</p>
-                                    
-								</li>
-								<li class="features-list-item">
-									<h5>One-Tap to Download</h5>
-									<p>You can download your favorite cute animal pictures by tapping on the download button. All pictures are saved in your photo album.</p>
-								</li>
-							</ul>
-						</div>
-
-					
-						<div class="col-md-4 col-md-push-4 col-sm-6">
-							<ul class="features-list features-list-right wow fadeInRight" data-wow-duration="1s">
-								<li class="features-list-item">
-									<h5>Like & Comment</h5>
-									<p>Similar to the popular social photography app Instagram, there’s an option to “like” and comment on favorite pictures.</p>
-								</li>
-								<li class="features-list-item">
-									<h5>Upload Your Own Pictures</h5>
-									<p>Cutest Paw has also incorporates the ability to create your own account and upload your favorite pictures of adorable animals.</p>
-								</li>
-							</ul>
-						</div>
-
-						
-						<div class="col-md-4 col-md-pull-4 text-center">
-							<img src="images/contents/features-phone.png" class="features-image wow fadeInUp" alt="" data-wow-duration="1s" />
-						</div>
-
-					</div>
-
 				</div>
-			</section> -->
-
-			<br><br>
-
-			<!-- Footer Bar Features --> 
-			<div class="columns is-vcentered mt-80">
-				<!-- Featured image -->
-				<div class="column is-4 is-offset-1">
-					<div class="minimal-feature-image">
-						<img class="main-image" src="img/avatars.png" alt="">
-					</div>
 				</div>
-				<!-- Content -->
-				<div class="column is-5 is-offset-1">
-					<div class="minimal-feature">
-						<h2 class="title is-5 minimal-title">Footer Bar</h2>
-						<div class="feature-content has-text-justified">
-							AVA will focus on helping the victims of domestic stalking, domestic violence, intimidation, as well as assist emergency services in responding to instances of violence as they occur. 
 
-							<br><br>
 
-						</div>
-					</div>
-				</div>
+
+<br><br>
+
+<!-- Footer Bar Features --> 
+<div class="columns is-vcentered mt-80">
+	<!-- Featured image -->
+	<div class="column is-4 is-offset-1">
+		<div class="minimal-feature-image">
+			<img class="main-image" src="img/avatars.png" alt="">
+		</div>
+	</div>
+	<!-- Content -->
+	<div class="column is-5 is-offset-1">
+		<div class="minimal-feature">
+			<h2 class="title is-5 minimal-title">Footer Bar</h2>
+			<div class="feature-content has-text-justified">
+				AVA will focus on helping the victims of domestic stalking, domestic violence, intimidation, as well as assist emergency services in responding to instances of violence as they occur. 
+
+				<br><br>
 
 			</div>
-			<!-- /Footer Bar Features -->
-
-
-
 		</div>
-	</div>		
+	</div>
+
+</div>
+<!-- /Footer Bar Features -->
+
+
+
+</div>
+</div>		
 </div>
 </div>
 <!--/Added Features --> 
-
-
 
 
 
