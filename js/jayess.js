@@ -6,4 +6,9 @@ $( document ).ready(function() {
 	$(".delete").click(function(){
 		$("#modal").toggleClass("is-active");
 	});
+	
+	//$("#btn_submit").click(function(){
+	//	$("#modal").toggleClass("is-active");
+	//});
+	
 });
