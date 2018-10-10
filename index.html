@@ -1,6 +1,15 @@
 <!--php
 include "start.php";
 
+include "counter.php";
+
+$count=$count + 1;
+
+// opens countlog.txt to change new hit number
+$datei = fopen("/countlog.txt","w");
+fwrite($datei, $count);
+fclose($datei);
+
 
 if(isset($_POST['submit']))
 {
@@ -28,6 +37,7 @@ if(isset($_POST['submit']))
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bulma-extensions.min.css">
+	 <link rel="stylesheet" type="text/css" href="style1.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jayess.js"></script>
 <!-- 	<link rel="stylesheet" type="text/css" href="css/jqcloud.css">
@@ -74,11 +84,53 @@ if(isset($_POST['submit']))
 					<div class="modal-card">
 						<header class="modal-card-head">
 							<p class="modal-card-title">Modal title</p>
+							
 							<button class="delete" aria-label="close"></button>
 						</header>
 						<section class="modal-card-body">
 
+<form method="post" style="text-align:center;">
+  <div id="register_message" ></div>
+  <table style="text-align:center; margin:auto;">
+     <tr>
+      <td>Name </td>
+	  
+       <td>
+		
+         <input type="text" name="name" class="textInput form-control" placeholder="John" id="name" required style="margin-left: 10px; ">
+       </td>
+	  
+     </tr>
+	  <br>
+	  <br>
 
+     <tr style="margin: 10px;">
+       <td>Email </td>
+       <td style="text-align: left"><input id="txt_email" type="email" name="email" class="textInput form-control" required="required" placeholder="john123@gmail.com" style="margin-left: 10px;"></td>
+     </tr>
+
+   
+     <tr>
+       <td>Comment</td>
+       <td><input id="txt_comment" type="comment" name="comment" class="textInput form-control" style="margin-left: 10px;"></td>
+     </tr>
+     <tr>
+       <td></td>
+       <td>
+        <br>
+        <div style= "text-align:center">
+          <input type="submit" class="button is-success"id="btn_submit" name="submit" value ="Submit"/> 
+          <!--<button type="button" class="Register" id="submit" name="submit">Register</button>-->
+          <br>
+          <br>
+        </td>
+      </div>
+
+    </tr>
+
+
+  </table>
+</form>
 							<!-- Content ... -->
 						</section>
 						<footer class="modal-card-foot">

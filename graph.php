@@ -1,6 +1,5 @@
 <?php
 include "start.php";
-
 include "counter.php";
 
 
@@ -16,7 +15,7 @@ include "counter.php";
 
     <script>
         // start of first graph
-        <?php $data1=mysqli_query($db,"SELECT date, Count(*) As 'Count' FROM `people` Group By date"); ?>
+        <?php $data1=mysqli_query($db,"SELECT date, Count(*) As 'Count' FROM `people` Group By date ORDER BY date DESC"); ?>
         // sql 
            var myData1=[<?php 
 while($info1=mysqli_fetch_array($data1))
@@ -26,7 +25,7 @@ while($info1=mysqli_fetch_array($data1))
            
            
            <?php
-$data1=mysqli_query($db,"SELECT distinct(date) as distinctD FROM people");
+$data1=mysqli_query($db,"SELECT distinct(date) as distinctD FROM people ORDER BY date DESC");
 ?>
 
 var myLabels=[<?php 
@@ -42,13 +41,13 @@ while($info1=mysqli_fetch_array($data1))
 // chart 2 data 
 
 
-<?php $data2=mysqli_query($db,"SELECT distinct(count(comment)) AS countDate,date FROM `people` WHERE comment='' group by date"); ?>
+<?php $data2=mysqli_query($db,"SELECT distinct(count(comment)) AS countDate,date FROM `people` WHERE comment!='' group by date ORDER BY date DESC"); ?>
         // sql 
            var myData2=[<?php while($info2=mysqli_fetch_array($data2)) echo $info2['countDate'].','; ?>];
 
            
            <?php
-$data2=mysqli_query($db,"SELECT distinct(date) as distinctD FROM people");
+$data2=mysqli_query($db,"SELECT distinct(date) as distinctD FROM people ORDER BY date DESC");
 ?>
 
 var myLabels2=[<?php 
@@ -60,7 +59,7 @@ while($info2=mysqli_fetch_array($data2))
 // chart 3
 
 
-<?php $data3=mysqli_query($db,"SELECT date, Count(*) As 'Count' FROM `people` WHERE date >= current_date - 7 Group By date"); ?>
+<?php $data3=mysqli_query($db,"SELECT date, Count(*) As 'Count' FROM `people` WHERE date >= current_date - 7 Group By date ORDER BY date DESC"); ?>
         // sql 
            var myData3=[<?php 
 while($info3=mysqli_fetch_array($data3))
@@ -68,7 +67,7 @@ while($info3=mysqli_fetch_array($data3))
 ?>];
            
            <?php
-$data3=mysqli_query($db,"SELECT distinct(date) as distinctD FROM people");
+$data3=mysqli_query($db,"SELECT distinct(date) as distinctD FROM people ORDER BY date DESC");
 ?>
 
 var myLabels3=[<?php 
@@ -171,6 +170,21 @@ while($info3=mysqli_fetch_array($data3))
 </head>    
 <body>
     
+    <button style="background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;" onclick="goBack()"> ← Go Back</button>
+    
+    <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+    
   
     <div id='visitCount' style="text-align:center; font-size: 2em;">
     <?php
@@ -184,9 +198,9 @@ echo "\n" ;
     
     ?>
     </div>
-    <div id='myChart1' style="text-align:center; width:500px; height: 500px; float: left;"></div>
-    <div id='myChart2' style="text-align:center; width:500px; height: 500px; float:right; margin-right: 100px;"></div>
-    <div id='myChart3' style="text-align:center;width:500px; height: 500px; float:left;"></div>
+    <div id='myChart1' style="text-align:center; width:600px; height: 500px; float: left;"></div>
+    <div id='myChart2' style="text-align:center; width:600px; height: 500px; float:right; margin-right: 100px;"></div>
+    <div id='myChart3' style="text-align:center;width:600px; height: 500px; float:left;"></div>
 		
 		<div style= "float:right; margin-right: 200px; font-size: 1.5em;">
 			<b>What people are commenting..</b>

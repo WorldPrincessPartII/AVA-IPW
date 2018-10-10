@@ -1,6 +1,9 @@
     .hidden.menu {
       display: none;
     }
+    td {
+        color: black;
+    }
 
     .masthead.segment {
       min-height: 700px;
