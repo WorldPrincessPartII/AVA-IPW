@@ -1,4 +1,8 @@
 <?php
+
+require_once "uq/auth.php";
+auth_require();
+
 include "start.php";
 
 include "counter.php";
