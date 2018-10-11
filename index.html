@@ -551,7 +551,7 @@ if(isset($_POST['submit']))
 		<div class="minimal-feature">
 			<h2 class="title is-5 minimal-title">Footer Bar</h2>
 			<div class="feature-content has-text-justified">
-				AVA will focus on helping the victims of domestic stalking, domestic violence, intimidation, as well as assist emergency services in responding to instances of violence as they occur. 
+				AVA features a global footer bar containing a speed dial button to allow users to immediate dial for emergency services. A home button to take them back to the home page and a shortcut to the audio recording function is also included in the global footer bar.
 
 				<br><br>
 
@@ -644,9 +644,17 @@ if(isset($_POST['submit']))
 <div style="text-align:center;">
 	<p><b>Share on Social Media!</b></p>
 
+	<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Place this tag where you want the share button to render. -->
+<div class="g-plus" data-action="share"></div>
+
+
 	<a href="https://plus.google.com/share?url=https://deco3801-blackpanda20.uqcloud.net/" onclick="javascript:window.open(this.href,
-	'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=500');return false;"><img
-	src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/ style="margin-bottom:22px"></a>
+	'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=500');return false;">
+	<img src="img/gplus.png" alt="Share on Google+"/ style="margin-bottom:22px; max-height: 30px;">
+	</a>
 
 	<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdeco3801-blackpanda20.uqcloud.net%2F&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId"
 	width="73" height="28" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
